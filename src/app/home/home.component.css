@@ -1,0 +1,63 @@
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.action-button {
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.action-button.edit {
+  background-color: #4caf50;
+  color: white;
+}
+
+.action-button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.action-button.edit:hover {
+  background-color: #45a049;
+}
+
+.action-button.delete:hover {
+  background-color: #e53935;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+
+button{
+  padding: 10px 15px;
+  border: none;
+}
+.edit {
+  background-color: blue;
+  color: white;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+}
+

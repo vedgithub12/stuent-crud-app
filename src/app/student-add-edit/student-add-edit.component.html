@@ -1,0 +1,26 @@
+<div class="student-form-container">
+  <h2>{{ studentId ? 'Edit Student' : 'Add Student' }}</h2>
+  <form (ngSubmit)="handleSubmit()">
+    <div class="row">
+      <label>First Name</label>
+      <input type="text" placeholder="Rahul" name="firstName" [(ngModel)]="newStudent.firstName" />
+    </div>
+    <div class="row">
+      <label>Last Name</label>
+      <input type="text" placeholder="Kumar" name="lastName"  [(ngModel)]="newStudent.lastName" />
+    </div>
+    <div class="row">
+      <label>Email</label>
+      <input type="email" placeholder="rahul@gmail.com" name="email"  [(ngModel)]="newStudent.email" />
+    </div>
+    <div class="row">
+      <label>Phone</label>
+      <input type="text" placeholder="123546879" name="phone"  [(ngModel)]="newStudent.phone" />
+    </div>
+
+    <div class="modal-actions">
+      <button type="button" class="cancel-button" (click)="router.navigate(['/'])">Cancel</button>
+      <button type="submit" class="save-button">{{ studentId ? 'Update' : 'Save' }}</button>
+    </div>
+  </form>
+</div>
